@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE
+include changelog
+
+recursive-include src *.c
+recursive-include include *.h
+recursive-include tests *.py

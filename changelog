@@ -1,0 +1,4 @@
+# Change log
+
+## [0.0.2] - 2016-08-26
+- renamed strndup function to avoid nameclash with C string library.
