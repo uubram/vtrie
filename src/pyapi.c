@@ -600,10 +600,9 @@ PyTrie_has_node(PyTrie *self, PyObject *args)
 }
 
 static PyObject *
-PyTrie_longest_prefix(PyTrie *self, PyObject *args, PyObject *kwds)
+PyTrie_longest_prefix(PyTrie *self, PyObject *args)
 {
     const char *key;
-    static char *kwlist[] = {"key", NULL};
 
 #ifdef IS_PY3K
     const char format[] = "y";
@@ -611,7 +610,7 @@ PyTrie_longest_prefix(PyTrie *self, PyObject *args, PyObject *kwds)
     const char format[] = "s";
 #endif
 
-    if (!PyArg_ParseTupleAndKeywords(args, kwds, format, kwlist, &key))
+    if (!PyArg_ParseTuple(args, format, &key))
         return NULL;
 
     const TrieItem *item = trie_longest_prefix(self->root, key);
