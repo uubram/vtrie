@@ -454,6 +454,10 @@ def test_longest_prefix():
     del t[b"foo"]
     assert t.longest_prefix(b"foozle") == ("fo", 1)
 
+    # testing with named argument
+    assert t.longest_prefix(key=b"foozle") == ("fo", 1)
+    assert t.longest_prefix(key=b"foobar") == ("foobar", 3)
+
 def test_suffixes():
     t = Trie()
     t[b"production"] = 1
