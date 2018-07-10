@@ -1060,7 +1060,7 @@ static PyMethodDef PyTrie_methods[] = {
     {"has_node",        (PyCFunction)PyTrie_has_node, METH_VARARGS,
         has_node__doc__},
     {"longest_prefix",  (PyCFunction)PyTrie_longest_prefix,
-        METH_VARARGS, longest_prefix__doc__},
+        METH_VARARGS | METH_KEYWORDS, longest_prefix__doc__},
     {"suffixes",        (PyCFunction)PyTrie_suffixes,
         METH_VARARGS, suffixes__doc__},
     {"neighbors",       (PyCFunction)PyTrie_neighbors,

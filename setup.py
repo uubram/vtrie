@@ -10,7 +10,7 @@ with open(path.join(here, "README.rst")) as f:
 
 setup(
         name = "vtrie",
-        version = "0.0.2",
+        version = "0.0.3",
         description = "A trie structure supporting fuzzy string searches.",
         long_description = long_description,
         author = "Bram Gerritsen",

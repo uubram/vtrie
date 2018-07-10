@@ -6,3 +6,8 @@ dist/
 # python testing
 .cache/
 __pycache__/
+.tox/
+.pytest_cache/
+
+# C extensions
+*.so

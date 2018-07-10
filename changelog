@@ -1,4 +1,9 @@
 # Change log
 
+## [0.0.3] - 2018-07-10
+### Fixed
+- segmentation fault calling longest_prefix in python 3. The method now uses a
+keyword. Thanks to Guillaume Bour (https://github.com/gbour) for reporting the
+segfault and suggesting a fix.
 ## [0.0.2] - 2016-08-26
 - renamed strndup function to avoid nameclash with C string library.
